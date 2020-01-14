@@ -27,13 +27,13 @@ body{
     padding-top: 2px;
 }
 .red-light{
-    background-color: rgb(248, 16, 16);
+    background: linear-gradient(to bottom, red, red, salmon);
 }
 .yellow-light{
-    background-color: rgb(255, 255, 9);
+    background: linear-gradient(to bottom, yellow, yellow, lightyellow);
 }
 .green-light{
-    background-color: rgb(18, 150, 18);
+    background: linear-gradient(to bottom, green, green, lightgreen);
 }
 .highlight-red{
     box-shadow: 0 0 70px red;
