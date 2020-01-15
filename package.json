@@ -19,6 +19,11 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -35,6 +40,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.3",
+    "gh-pages": "^2.2.0",
+    "react-test-renderer": "^16.12.0"
   }
 }

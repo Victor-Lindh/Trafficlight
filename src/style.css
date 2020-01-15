@@ -12,9 +12,9 @@ body{
     align-items: center;
     border: 3px solid darkslategrey;
     border-radius: 5px;
-    width: 35vw;
+    width: 200px;
     height: 90vh;
-    padding: 5px;
+    padding: 5px 10px;
     background: linear-gradient(to top, black, #282828);
 }
 .light{
@@ -51,7 +51,11 @@ button{
     background-color: gray;
     color: snow;
     font-weight: bold;
-    padding: 3px;
+    padding: 5px;
+}
+button[disabled]{
+    background-color: black;
+    color: rgba(255,255,255,.5);
 }
 .timer{
     background-color: black;

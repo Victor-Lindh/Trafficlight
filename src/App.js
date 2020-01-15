@@ -13,7 +13,7 @@ class TrafficLight extends Component {
     this.crossTheStreet = this.crossTheStreet.bind(this);
   }
   
-      crossTheStreet(e){
+     crossTheStreet(){
         this.setState({clicked: true})
         
         let time = setInterval(() => {
@@ -21,7 +21,7 @@ class TrafficLight extends Component {
             timer: this.state.timer + 1,
         });
         }, 1000);
-        setTimeout((e) => {
+        setTimeout(() => {
           clearInterval(time);
           this.setState({
             timer: 0,
