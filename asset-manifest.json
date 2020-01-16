@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Trafficlight/static/css/main.2c104ca9.chunk.css",
-    "main.js": "/Trafficlight/static/js/main.6ff86177.chunk.js",
-    "main.js.map": "/Trafficlight/static/js/main.6ff86177.chunk.js.map",
+    "main.js": "/Trafficlight/static/js/main.9dba9f72.chunk.js",
+    "main.js.map": "/Trafficlight/static/js/main.9dba9f72.chunk.js.map",
     "runtime-main.js": "/Trafficlight/static/js/runtime-main.ec522439.js",
     "runtime-main.js.map": "/Trafficlight/static/js/runtime-main.ec522439.js.map",
-    "static/js/2.abffd684.chunk.js": "/Trafficlight/static/js/2.abffd684.chunk.js",
-    "static/js/2.abffd684.chunk.js.map": "/Trafficlight/static/js/2.abffd684.chunk.js.map",
+    "static/js/2.921e3545.chunk.js": "/Trafficlight/static/js/2.921e3545.chunk.js",
+    "static/js/2.921e3545.chunk.js.map": "/Trafficlight/static/js/2.921e3545.chunk.js.map",
     "index.html": "/Trafficlight/index.html",
-    "precache-manifest.beebf5ed322cb3ddd1aee62870410dd6.js": "/Trafficlight/precache-manifest.beebf5ed322cb3ddd1aee62870410dd6.js",
+    "precache-manifest.eb25ca02b60f18a0632832fa3bc916dd.js": "/Trafficlight/precache-manifest.eb25ca02b60f18a0632832fa3bc916dd.js",
     "service-worker.js": "/Trafficlight/service-worker.js",
     "static/css/main.2c104ca9.chunk.css.map": "/Trafficlight/static/css/main.2c104ca9.chunk.css.map",
-    "static/js/2.abffd684.chunk.js.LICENSE": "/Trafficlight/static/js/2.abffd684.chunk.js.LICENSE"
+    "static/js/2.921e3545.chunk.js.LICENSE": "/Trafficlight/static/js/2.921e3545.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.ec522439.js",
-    "static/js/2.abffd684.chunk.js",
+    "static/js/2.921e3545.chunk.js",
     "static/css/main.2c104ca9.chunk.css",
-    "static/js/main.6ff86177.chunk.js"
+    "static/js/main.9dba9f72.chunk.js"
   ]
 }
