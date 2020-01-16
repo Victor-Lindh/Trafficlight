@@ -76,7 +76,7 @@ class TrafficLight extends Component {
             
             }}>
           <div>{
-              (this.state.cars.length > 0 && this.state.timer >= 9 || this.state.timer >= 19) ? this.state.cars.map((car, index) => 
+              (this.state.cars.length > 0 && this.state.timer >= 9) || (this.state.timer >= 19) ? this.state.cars.map((car, index) => 
               <li key={index}>{car} stopped...</li>)
               : 'Cars driving...'
           }</div>
