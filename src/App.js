@@ -60,7 +60,6 @@ class TrafficLight extends Component {
         <button id="btn" disabled={this.state.clicked} onClick={this.crossTheStreet}>Press to cross the street</button>
         <div className="timer">{this.state.timer}</div>
       </div>
-      
         <Message
           time={this.state.timer}
           clicked={this.state.clicked}
