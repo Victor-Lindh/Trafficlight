@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "40485da616eddda82f54ac13200d922a",
+    "revision": "8f66c48ff0b21fb5a3cdd9e67e708aef",
     "url": "/Trafficlight/index.html"
   },
   {
-    "revision": "adc05b3e923adbd56fcc",
-    "url": "/Trafficlight/static/css/main.9c36f1c8.chunk.css"
+    "revision": "12e366c893b362e6508f",
+    "url": "/Trafficlight/static/css/main.2c104ca9.chunk.css"
   },
   {
     "revision": "b4f155a5948f51b64a55",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Trafficlight/static/js/2.abffd684.chunk.js.LICENSE"
   },
   {
-    "revision": "adc05b3e923adbd56fcc",
-    "url": "/Trafficlight/static/js/main.b6aebc09.chunk.js"
+    "revision": "12e366c893b362e6508f",
+    "url": "/Trafficlight/static/js/main.6ff86177.chunk.js"
   },
   {
     "revision": "127244deac85324662ef",

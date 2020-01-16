@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Trafficlight/precache-manifest.1b1974f8d8cfca692b48bedd4cb501a8.js"
+  "/Trafficlight/precache-manifest.beebf5ed322cb3ddd1aee62870410dd6.js"
 );
 
 self.addEventListener('message', (event) => {
