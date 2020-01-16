@@ -8,10 +8,13 @@ class TrafficLight extends Component {
     this.state = {
       timer: 0,
       clicked: false,
-      messageIsVisible: false
+      messageIsVisible: false,
+      cars: []
     }
 
     this.crossTheStreet = this.crossTheStreet.bind(this);
+    this.carsPopulating = this.carsPopulating.bind(this);
+
   }
   
     crossTheStreet(){
@@ -34,12 +37,26 @@ class TrafficLight extends Component {
         }, 20000);
       }
 
+ componentWillUpdate(){
+   this.carsPopulating();
+}
+
+    async carsPopulating () {
+
+        let call = await this.state.timer === 3;
+        if(call){
+          console.log(call);
+        }
+      }
+
 
   render(){
+
+    
     return (
     <>
       <div className="container">
-        <div className={this.state.timer <= 7 || this.state.timer == 20 ? "light red-light highlight-red":"light red-light"}></div>
+        <div className={this.state.timer <= 7 || this.state.timer === 20 ? "light red-light highlight-red":"light red-light"}></div>
         <div className={(this.state.timer >= 6 && this.state.timer < 10) || this.state.timer >= 15 && this.state.timer <= 19 ? "light yellow-light highlight-yellow" : "light yellow-light"}></div>
         <div className={(this.state.timer >= 10 && this.state.timer <= 16) ? "light green-light highlight-green" : "light green-light"}></div>
         <button id="btn" disabled={this.state.clicked} onClick={this.crossTheStreet}>Press to cross the street</button>
