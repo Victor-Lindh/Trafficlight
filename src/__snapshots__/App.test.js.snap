@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot testing should match snapshot 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <div
+      className="light red-light highlight-red"
+    />
+    <div
+      className="light yellow-light"
+    />
+    <div
+      className="light green-light"
+    />
+    <button
+      disabled={false}
+      id="btn"
+      onClick={[Function]}
+    >
+      Press to cross the street
+    </button>
+    <div
+      className="timer"
+    >
+      0
+    </div>
+  </div>
+  <Message
+    clicked={false}
+    note="Please do not cross!"
+    time={0}
+  />
+</Fragment>
+`;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 import TrafficLight from '../src/App';
+
 import {crossTheStreet} from '../src/App';
 
 beforeEach(() => {
@@ -8,14 +9,15 @@ beforeEach(() => {
     });
     
     describe('App rendering elements', () => {
-        test('Render 5 divs', () => {
+        it('Render 6 divs', () => {
             const App = mount(<TrafficLight />);
-            expect(App.find('div')).toHaveLength(5);
+            expect(App.find('div')).toHaveLength(6);
         });
-        test('Render one button', () => {
-            const App = mount(<TrafficLight />);
+        it('Render one button', () => {
+            const App = render(<TrafficLight />);
             expect(App.find('button')).toHaveLength(1);
-        });    
+        });
+
     });
 
     describe('Test state properties for correct initial values', () => {
@@ -28,7 +30,8 @@ beforeEach(() => {
             expect(App.state('timer')).toBe(0);
         });
     });
-    describe('Test crossTheStreet function for state changes', () => {
+
+    describe('Test for state changes', () => {
         test('should set state property "clicked" to "true"', () => {
             const App = mount(<TrafficLight />);
             expect(App.state('clicked')).toBe(false);
@@ -43,7 +46,7 @@ beforeEach(() => {
             jest.useFakeTimers();
             expect(App.state("timer")).toEqual(0);
             App.instance().crossTheStreet();
-            jest.advanceTimersByTime(3000);
+            jest.advanceTimersByTime(3000);  // Testing out to see if counter increments by 3 seconds, arbitrarily
             expect(App.state("timer")).toEqual(3);
             jest.useRealTimers();
         });
@@ -69,8 +72,17 @@ beforeEach(() => {
             expect(App.state('clicked')).toBe(false);
             jest.useRealTimers();
         });
-        
-
+    });
+    describe('Snapshot testing', () => {
+        test('should match snapshot', () => {
+            const App = shallow(<TrafficLight />);
+            expect(App).toMatchSnapshot();
+        });
     });
 
-
+    test('button should recieve "disabled" attribute when clicked', () => {
+        const App = mount(<TrafficLight />);
+        App.find('#btn').simulate('click');
+        expect(App.find('#btn').get(0).props.disabled).toBe(true);
+    })
+    

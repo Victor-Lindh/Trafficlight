@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, black, darkblue );
+    height: 100vh;
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid darkslategrey;
+    border-radius: 5px;
+    width: 200px;
+    height: 85vh;
+    padding: 5px 10px;
+    background: linear-gradient(to top, black, #282828);
+}
+.light{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 5px 10px;
+    border: 2px solid black;
+    border-top: 10px solid #181818;
+    padding-top: 2px;
+}
+.red-light{
+    background: linear-gradient(to bottom, red, red, salmon);
+}
+.yellow-light{
+    background: linear-gradient(to bottom, yellow, yellow, lightyellow);
+}
+.green-light{
+    background: linear-gradient(to bottom, green, green, lightgreen);
+}
+.highlight-red{
+    box-shadow: 0 0 70px red;
+}
+.highlight-yellow{
+    box-shadow: 0 0 70px yellow;
+}
+.highlight-green{
+    box-shadow: 0 0 70px rgb(93, 241, 93);
+}
+button{
+    border-radius: 2px;
+    outline: 1px solid darkslategray;
+    margin-top: 10px;
+    background-color: gray;
+    color: snow;
+    font-weight: bold;
+    padding: 5px;
+}
+button[disabled]{
+    background-color: black;
+    color: rgba(255,255,255,.5);
+}
+.timer{
+    background-color: black;
+    color: snow;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+.message{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    border: 1px solid white;
+}
+.doNotCross{
+    @extend .message;
+    color: snow;
+    background-color: firebrick;
+}
+.pleaseCross{
+    @extend .message;
+    color: snow;
+    background-color: forestgreen; 
+}

@@ -1,67 +1,121 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(to bottom, black, darkblue );
-    height: 100vh;
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(darkblue));
+  background: linear-gradient(to bottom, black, darkblue);
+  height: 100vh;
 }
-.container{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid darkslategrey;
-    border-radius: 5px;
-    width: 200px;
-    height: 90vh;
-    padding: 5px 10px;
-    background: linear-gradient(to top, black, #282828);
+
+.container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid darkslategrey;
+  border-radius: 5px;
+  width: 200px;
+  height: 85vh;
+  padding: 5px 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(#282828));
+  background: linear-gradient(to top, black, #282828);
 }
-.light{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 5px 10px;
-    border: 2px solid black;
-    border-top: 10px solid #181818;
-    padding-top: 2px;
+
+.light {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 5px 10px;
+  border: 2px solid black;
+  border-top: 10px solid #181818;
+  padding-top: 2px;
 }
-.red-light{
-    background: linear-gradient(to bottom, red, red, salmon);
+
+.red-light {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(red), to(salmon));
+  background: linear-gradient(to bottom, red, red, salmon);
 }
-.yellow-light{
-    background: linear-gradient(to bottom, yellow, yellow, lightyellow);
+
+.yellow-light {
+  background: -webkit-gradient(linear, left top, left bottom, from(yellow), color-stop(yellow), to(lightyellow));
+  background: linear-gradient(to bottom, yellow, yellow, lightyellow);
 }
-.green-light{
-    background: linear-gradient(to bottom, green, green, lightgreen);
+
+.green-light {
+  background: -webkit-gradient(linear, left top, left bottom, from(green), color-stop(green), to(lightgreen));
+  background: linear-gradient(to bottom, green, green, lightgreen);
 }
-.highlight-red{
-    box-shadow: 0 0 70px red;
+
+.highlight-red {
+  -webkit-box-shadow: 0 0 70px red;
+          box-shadow: 0 0 70px red;
 }
-.highlight-yellow{
-    box-shadow: 0 0 70px yellow;
+
+.highlight-yellow {
+  -webkit-box-shadow: 0 0 70px yellow;
+          box-shadow: 0 0 70px yellow;
 }
-.highlight-green{
-    box-shadow: 0 0 70px rgb(93, 241, 93);
+
+.highlight-green {
+  -webkit-box-shadow: 0 0 70px #5df15d;
+          box-shadow: 0 0 70px #5df15d;
 }
-button{
-    border-radius: 2px;
-    outline: 1px solid darkslategray;
-    margin-top: 10px;
-    background-color: gray;
-    color: snow;
-    font-weight: bold;
-    padding: 5px;
+
+button {
+  border-radius: 2px;
+  outline: 1px solid darkslategray;
+  margin-top: 10px;
+  background-color: gray;
+  color: snow;
+  font-weight: bold;
+  padding: 5px;
 }
-button[disabled]{
-    background-color: black;
-    color: rgba(255,255,255,.5);
+
+button[disabled] {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.5);
 }
-.timer{
-    background-color: black;
-    color: snow;
-    font-size: 1.5em;
-    width: 100%;
-    text-align: center;
-    font-weight: bolder;
+
+.timer {
+  background-color: black;
+  color: snow;
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
 }
+
+.message, .doNotCross, .pleaseCross {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  border: 1px solid white;
+}
+
+.doNotCross {
+  color: snow;
+  background-color: firebrick;
+}
+
+.pleaseCross {
+  color: snow;
+  background-color: forestgreen;
+}
+/*# sourceMappingURL=style.css.map */
