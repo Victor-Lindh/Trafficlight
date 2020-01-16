@@ -4,7 +4,7 @@ function Message(props) {
 
     return (
         <div>
-            <p id="msgDiv" className={props.time < 10 || props.time > 16 ? "doNotCross" : "pleaseCross"}>{props.note}</p>
+            <p id="msgDiv" className={props.time < 10 || props.time > 19 ? "doNotCross" : "pleaseCross"}>{props.note}</p>
         </div>
     )};
 

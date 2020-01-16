@@ -28,9 +28,10 @@ describe('Text and style changes', () => {
         expect(wrapper.containsMatchingElement(<div><p>Please do not cross!</p></div>)).toBeTruthy();
     });
 
-    it.only('New text and style 10 seconds after click', () => {
+    it('New text and style 10 seconds after click', () => {
         const App = shallow(<TrafficLight />);
         const wrapper = mount(<Message note="Please do not cross!"/>);
+        
         expect(App.state('messageIsVisible')).toBe(false);
         App.setState({messageIsVisible: true, timer: 1, clicked: true});
         wrapper.setProps({ time: 1, note: "Please do not cross!" });

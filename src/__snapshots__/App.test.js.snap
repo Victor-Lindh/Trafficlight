@@ -32,5 +32,21 @@ exports[`Snapshot testing should match snapshot 1`] = `
     note="Please do not cross!"
     time={0}
   />
+  <div
+    style={
+      Object {
+        "color": "yellow",
+        "fontSize": "24px",
+        "listStyleType": "none",
+        "position": "absolute",
+        "right": "200px",
+        "top": "50px",
+      }
+    }
+  >
+    <div>
+      Cars driving...
+    </div>
+  </div>
 </Fragment>
 `;

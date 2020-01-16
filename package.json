@@ -2,7 +2,7 @@
   "name": "examapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://victor-lindh.github.io/Trafficlight/",
+  "homepage": "/Trafficlight",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -18,7 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "cypress:open": "cypress open",
+    "cypress:e2e": "start-server-and-test start http://localhost:3000 cypress:open"
   },
   "jest": {
     "snapshotSerializers": [
@@ -60,6 +62,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.3",
     "gh-pages": "^2.2.0",
-    "react-test-renderer": "^16.12.0"
+    "react-test-renderer": "^16.12.0",
+    "start-server-and-test": "^1.10.6"
   }
 }
